@@ -1,0 +1,59 @@
+.logo {
+  width: 128px;
+  height: 128px;
+}
+
+.logo-div {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#logo-container {
+  position: relative;
+  height: 120px;
+}
+
+#logo-ipfs {
+  animation: ipfs 3s infinite;
+  -webkit-backface-visibility: hidden;
+}
+
+#logo-ens {
+
+  animation: ens 3s infinite;
+  -webkit-backface-visibility: hidden;
+}
+
+@keyframes ipfs {
+
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+}
+
+@keyframes ens {
+
+  0% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+
+  50% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+
+}

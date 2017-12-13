@@ -1,0 +1,43 @@
+body {
+  background-color: #eeeeee;
+  font-family: 'Rokkitt';
+}
+
+#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#input-container {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#input-address {
+  width: 100px;
+}
+
+#input-hash {
+  width: 350px;
+}
+
+input {
+  font-family: 'Rokkitt';
+}
+
+.button {
+  border-radius: 5px;
+  background: #e60000;
+  color: white;
+  padding: 5px;
+  width: 100px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: bold;
+}
