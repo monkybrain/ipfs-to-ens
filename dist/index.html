@@ -31,17 +31,17 @@
       <p>
         ENS domain address<br />
       </p>
-      <p><input id="input-ens" type="text" placeholder="ipfs-to-ens.eth" size="20"></p>
+      <p><input id="input-ens" type="text" placeholder="ipfs-to-ens.eth" size="20" value="monkybrain.eth"></p>
 
       <!-- INPUT: IPFS HASH -->
       <p>
         IPFS content hash<br />
       </p>
       <p>
-        <input id="input-ipfs" type="text" placeholder="QmdsCTbnG9FR7BDb9D3eonR1BjZBEW6p6URW1ZqVV5yVsa" size="48" maxlength="46">
+        <input id="input-ipfs" type="text" placeholder="QmdsCTbnG9FR7BDb9D3eonR1BjZBEW6p6URW1ZqVV5yVsa" size="48" maxlength="46" value="QmdsCTbnG9FR7BDb9D3eonR1BjZBEW6p6URW1ZqVV5yVsa">
       </p>
 
-      <div class="button">
+      <div class="button" onclick="storeHash()">
         STORE HASH
       </div>
       </div>
@@ -50,6 +50,6 @@
 
 
 </div>
-
 </body>
+<script src="js/index.js"></script>
 </html>

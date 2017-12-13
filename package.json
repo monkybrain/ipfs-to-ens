@@ -1,0 +1,25 @@
+{
+  "name": "ipfs-to-ens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkybrain/ipfs-to-ens.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monkybrain/ipfs-to-ens/issues"
+  },
+  "homepage": "https://github.com/monkybrain/ipfs-to-ens#readme",
+  "dependencies": {
+    "eth-ens-namehash": "^2.0.8",
+    "is-valid-domain": "0.0.5",
+    "multihashes": "^0.4.12",
+    "web3": "^1.0.0-beta.26"
+  }
+}
