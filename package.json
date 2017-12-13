@@ -21,5 +21,6 @@
     "is-valid-domain": "0.0.5",
     "multihashes": "^0.4.12",
     "web3": "^1.0.0-beta.26"
-  }
+  },
+  "devDependencies": {}
 }

@@ -26,8 +26,13 @@ body {
   width: 350px;
 }
 
+#network {
+  margin-top: 10px;
+}
+
 input {
-  font-family: 'Rokkitt';
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
 }
 
 .button {

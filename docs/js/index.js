@@ -7639,43 +7639,21 @@ utils.intFromLE = intFromLE;
 
 },{"bn.js":2,"minimalistic-assert":53,"minimalistic-crypto-utils":54}],22:[function(require,module,exports){
 module.exports={
-  "_args": [
-    [
-      {
-        "raw": "elliptic@^6.4.0",
-        "scope": null,
-        "escapedName": "elliptic",
-        "name": "elliptic",
-        "rawSpec": "^6.4.0",
-        "spec": ">=6.4.0 <7.0.0",
-        "type": "range"
-      },
-      "/home/philip/Projects/monkybrain/ipfs-to-ens/node_modules/eth-lib"
-    ]
-  ],
-  "_from": "elliptic@>=6.4.0 <7.0.0",
+  "_from": "elliptic@^6.4.0",
   "_id": "elliptic@6.4.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-ysmvh2LIWDYYcAPI3+GT5eLq5d8=",
   "_location": "/elliptic",
-  "_nodeVersion": "7.0.0",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/elliptic-6.4.0.tgz_1487798866428_0.30510620190761983"
-  },
-  "_npmUser": {
-    "name": "indutny",
-    "email": "fedor@indutny.com"
-  },
-  "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "elliptic@^6.4.0",
-    "scope": null,
-    "escapedName": "elliptic",
     "name": "elliptic",
+    "escapedName": "elliptic",
     "rawSpec": "^6.4.0",
-    "spec": ">=6.4.0 <7.0.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^6.4.0"
   },
   "_requiredBy": [
     "/eth-lib",
@@ -7683,9 +7661,8 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
   "_shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
-  "_shrinkwrap": null,
   "_spec": "elliptic@^6.4.0",
-  "_where": "/home/philip/Projects/monkybrain/ipfs-to-ens/node_modules/eth-lib",
+  "_where": "/Users/philip/Projects/monkybrain/ipfs-to-ens/node_modules/eth-lib",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -7693,6 +7670,7 @@ module.exports={
   "bugs": {
     "url": "https://github.com/indutny/elliptic/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "bn.js": "^4.4.0",
     "brorand": "^1.0.1",
@@ -7702,6 +7680,7 @@ module.exports={
     "minimalistic-assert": "^1.0.0",
     "minimalistic-crypto-utils": "^1.0.0"
   },
+  "deprecated": false,
   "description": "EC cryptography",
   "devDependencies": {
     "brfs": "^1.4.3",
@@ -7719,15 +7698,9 @@ module.exports={
     "jshint": "^2.6.0",
     "mocha": "^2.1.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
-    "tarball": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz"
-  },
   "files": [
     "lib"
   ],
-  "gitHead": "6b0d2b76caae91471649c8e21f0b1d3ba0f96090",
   "homepage": "https://github.com/indutny/elliptic",
   "keywords": [
     "EC",
@@ -7737,15 +7710,7 @@ module.exports={
   ],
   "license": "MIT",
   "main": "lib/elliptic.js",
-  "maintainers": [
-    {
-      "name": "indutny",
-      "email": "fedor@indutny.com"
-    }
-  ],
   "name": "elliptic",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/indutny/elliptic.git"
@@ -12379,7 +12344,7 @@ HashBase.prototype._digest = function () {
 module.exports = HashBase
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":214,"inherits":48,"stream":320}],33:[function(require,module,exports){
+},{"buffer":214,"inherits":48,"stream":319}],33:[function(require,module,exports){
 var hash = exports;
 
 hash.utils = require('./hash/utils');
@@ -37520,53 +37485,29 @@ module.exports = {
 
 },{"bn.js":143,"eth-lib/lib/hash":26,"number-to-bn":58,"underscore":89,"utf8":91}],147:[function(require,module,exports){
 module.exports={
-  "_args": [
-    [
-      {
-        "raw": "web3",
-        "scope": null,
-        "escapedName": "web3",
-        "name": "web3",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/home/philip/Projects/monkybrain/ipfs-to-ens"
-    ]
-  ],
-  "_from": "web3@latest",
+  "_from": "web3@^1.0.0-beta.26",
   "_id": "web3@1.0.0-beta.26",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-u0ba9q78MT92iz3jnX9KjXvQZmM=",
   "_location": "/web3",
-  "_nodeVersion": "6.11.4",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/web3-1.0.0-beta.26.tgz_1510658634496_0.9858382688835263"
-  },
-  "_npmUser": {
-    "name": "frozeman",
-    "email": "fabian@frozeman.de"
-  },
-  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "web3",
-    "scope": null,
-    "escapedName": "web3",
+    "type": "range",
+    "registry": true,
+    "raw": "web3@^1.0.0-beta.26",
     "name": "web3",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "escapedName": "web3",
+    "rawSpec": "^1.0.0-beta.26",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0-beta.26"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/web3/-/web3-1.0.0-beta.26.tgz",
   "_shasum": "bb46daf6aefc313f768b3de39d7f4a8d7bd06663",
-  "_shrinkwrap": null,
-  "_spec": "web3",
-  "_where": "/home/philip/Projects/monkybrain/ipfs-to-ens",
+  "_spec": "web3@^1.0.0-beta.26",
+  "_where": "/Users/philip/Projects/monkybrain/ipfs-to-ens",
   "author": {
     "name": "ethereum.org"
   },
@@ -37599,6 +37540,7 @@ module.exports={
   "bugs": {
     "url": "https://github.com/ethereum/web3.js/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "web3-bzz": "^1.0.0-beta.26",
     "web3-core": "^1.0.0-beta.26",
@@ -37608,13 +37550,8 @@ module.exports={
     "web3-shh": "^1.0.0-beta.26",
     "web3-utils": "^1.0.0-beta.26"
   },
+  "deprecated": false,
   "description": "Ethereum JavaScript API",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "bb46daf6aefc313f768b3de39d7f4a8d7bd06663",
-    "tarball": "https://registry.npmjs.org/web3/-/web3-1.0.0-beta.26.tgz"
-  },
   "keywords": [
     "Ethereum",
     "JavaScript",
@@ -37622,21 +37559,12 @@ module.exports={
   ],
   "license": "LGPL-3.0",
   "main": "src/index.js",
-  "maintainers": [
-    {
-      "name": "frozeman",
-      "email": "fabian@frozeman.de"
-    }
-  ],
   "name": "web3",
   "namespace": "ethereum",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "https://github.com/ethereum/web3.js/tree/master/packages/web3"
   },
-  "scripts": {},
   "types": "index.d.ts",
   "version": "1.0.0-beta.26"
 }
@@ -37765,60 +37693,28 @@ module.exports = require('../package.json').version;
 
 },{"../package.json":151}],151:[function(require,module,exports){
 module.exports={
-  "_args": [
-    [
-      {
-        "raw": "websocket@git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-        "scope": null,
-        "escapedName": "websocket",
-        "name": "websocket",
-        "rawSpec": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-        "spec": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-        "type": "hosted",
-        "hosted": {
-          "type": "github",
-          "ssh": "git@github.com:frozeman/WebSocket-Node.git#browserifyCompatible",
-          "sshUrl": "git+ssh://git@github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-          "httpsUrl": "git+https://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-          "gitUrl": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-          "shortcut": "github:frozeman/WebSocket-Node#browserifyCompatible",
-          "directUrl": "https://raw.githubusercontent.com/frozeman/WebSocket-Node/browserifyCompatible/package.json"
-        }
-      },
-      "/home/philip/Projects/monkybrain/ipfs-to-ens/node_modules/web3-providers-ws"
-    ]
-  ],
   "_from": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
   "_id": "websocket@1.0.24",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-78X+d++TSFXAqH/cRZB/NgwPufk=",
   "_location": "/websocket",
   "_phantomChildren": {},
   "_requested": {
+    "type": "git",
     "raw": "websocket@git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-    "scope": null,
-    "escapedName": "websocket",
     "name": "websocket",
+    "escapedName": "websocket",
     "rawSpec": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-    "spec": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-    "type": "hosted",
-    "hosted": {
-      "type": "github",
-      "ssh": "git@github.com:frozeman/WebSocket-Node.git#browserifyCompatible",
-      "sshUrl": "git+ssh://git@github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-      "httpsUrl": "git+https://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-      "gitUrl": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-      "shortcut": "github:frozeman/WebSocket-Node#browserifyCompatible",
-      "directUrl": "https://raw.githubusercontent.com/frozeman/WebSocket-Node/browserifyCompatible/package.json"
-    }
+    "saveSpec": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
+    "fetchSpec": "git://github.com/frozeman/WebSocket-Node.git",
+    "gitCommittish": "browserifyCompatible"
   },
   "_requiredBy": [
     "/web3-providers-ws"
   ],
   "_resolved": "git://github.com/frozeman/WebSocket-Node.git#7004c39c42ac98875ab61126e5b4a925430f592c",
-  "_shasum": "e66e1fea02fcf85a7ffccb65ece339f4e6789677",
-  "_shrinkwrap": null,
   "_spec": "websocket@git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
-  "_where": "/home/philip/Projects/monkybrain/ipfs-to-ens/node_modules/web3-providers-ws",
+  "_where": "/Users/philip/Projects/monkybrain/ipfs-to-ens/node_modules/web3-providers-ws",
   "author": {
     "name": "Brian McKelvey",
     "email": "brian@worlize.com",
@@ -37828,6 +37724,7 @@ module.exports={
   "bugs": {
     "url": "https://github.com/theturtle32/WebSocket-Node/issues"
   },
+  "bundleDependencies": false,
   "config": {
     "verbose": false
   },
@@ -37844,6 +37741,7 @@ module.exports={
     "typedarray-to-buffer": "^3.1.2",
     "yaeti": "^0.0.6"
   },
+  "deprecated": false,
   "description": "Websocket Client & Server Library implementing the WebSocket protocol as specified in RFC 6455.",
   "devDependencies": {
     "buffer-equal": "^1.0.0",
@@ -37860,7 +37758,6 @@ module.exports={
   "engines": {
     "node": ">=0.8.0"
   },
-  "gitHead": "7004c39c42ac98875ab61126e5b4a925430f592c",
   "homepage": "https://github.com/theturtle32/WebSocket-Node",
   "keywords": [
     "websocket",
@@ -37877,9 +37774,6 @@ module.exports={
   "license": "Apache-2.0",
   "main": "index",
   "name": "websocket",
-  "optionalDependencies": {},
-  "readme": "WebSocket Client & Server Implementation for Node\n=================================================\n\n[![npm version](https://badge.fury.io/js/websocket.svg)](http://badge.fury.io/js/websocket)\n\n[![NPM Downloads](https://img.shields.io/npm/dm/websocket.svg)](https://www.npmjs.com/package/websocket)\n\n[![NPM](https://nodei.co/npm/websocket.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/websocket/)\n\n[![NPM](https://nodei.co/npm-dl/websocket.png?height=3)](https://nodei.co/npm/websocket/)\n\n[ ![Codeship Status for theturtle32/WebSocket-Node](https://codeship.com/projects/70458270-8ee7-0132-7756-0a0cf4fe8e66/status?branch=master)](https://codeship.com/projects/61106)\n\nOverview\n--------\nThis is a (mostly) pure JavaScript implementation of the WebSocket protocol versions 8 and 13 for Node.  There are some example client and server applications that implement various interoperability testing protocols in the \"test/scripts\" folder.\n\nFor a WebSocket client written in ActionScript 3, see my [AS3WebScocket](https://github.com/theturtle32/AS3WebSocket) project.\n\n\nDocumentation\n=============\n\n[You can read the full API documentation in the docs folder.](docs/index.md)\n\n\nChangelog\n---------\n\n***Current Version: 1.0.24*** — Released 2016-12-28\n\n***Version 1.0.24***\n\n* Fixed a bug when using native keepalive on Node >= 6.0. (Thanks, [@prossin](https://github.com/prossin))\n* Upgrading outdated dependencies\n\n***Version 1.0.23***\n\n* Official support for Node 6.x\n* Updating dependencies. Specifically, updating nan to ^2.3.3\n\n***Version 1.0.22***\n\n* Updating to work with nan 2.x\n\n\n***Version 1.0.21***\n\n* Incremented and re-published to work around an aborted npm publish of v1.0.20.\n\n***Version 1.0.20***\n\n* Added EventTarget to the W3CWebSocket interface (Thanks, [@ibc](https://github.com/ibc)!)\n* Corrected an inaccurate error message. (Thanks, [@lekoaf](https://github.com/lekoaf)!)\n\n***Version 1.0.19***\n\n* Updated to nan v1.8.x (tested with v1.8.4)\n* Added `\"license\": \"Apache-2.0\"` to package.json via [pull request #199](https://github.com/theturtle32/WebSocket-Node/pull/199) by [@pgilad](https://github.com/pgilad). See [npm1k.org](http://npm1k.org/).\n\n[View the full changelog](CHANGELOG.md)\n\nBrowser Support\n---------------\n\nAll current browsers are fully supported.\n\n* Firefox 7-9 (Old) (Protocol Version 8)\n* Firefox 10+ (Protocol Version 13)\n* Chrome 14,15 (Old) (Protocol Version 8)\n* Chrome 16+ (Protocol Version 13)\n* Internet Explorer 10+ (Protocol Version 13)\n* Safari 6+ (Protocol Version 13)\n\n***Safari older than 6.0 is not supported since it uses a very old draft of WebSockets***\n\n***If you need to simultaneously support legacy browser versions that had implemented draft-75/draft-76/draft-00, take a look here: https://gist.github.com/1428579***\n\nBenchmarks\n----------\nThere are some basic benchmarking sections in the Autobahn test suite.  I've put up a [benchmark page](http://theturtle32.github.com/WebSocket-Node/benchmarks/) that shows the results from the Autobahn tests run against AutobahnServer 0.4.10, WebSocket-Node 1.0.2, WebSocket-Node 1.0.4, and ws 0.3.4.\n\nAutobahn Tests\n--------------\nThe very complete [Autobahn Test Suite](http://autobahn.ws/testsuite/) is used by most WebSocket implementations to test spec compliance and interoperability.\n\n- [View Server Test Results](http://theturtle32.github.com/WebSocket-Node/test-report/servers/)\n\nNotes\n-----\nThis library has been used in production on [worlize.com](https://www.worlize.com) since April 2011 and seems to be stable.  Your mileage may vary.\n\n**Tested with the following node versions:**\n\n- 6.2.0\n- 5.11.1\n- 4.4.4\n- 0.10.45\n\nIt may work in earlier or later versions but I'm not actively testing it outside of the listed versions.  YMMV.\n\nInstallation\n------------\n\nA few users have reported difficulties building the native extensions without first manually installing node-gyp.  If you have trouble building the native extensions, make sure you've got a C++ compiler, and have done `npm install -g node-gyp` first. \n\nNative extensions are optional, however, and WebSocket-Node will work even if the extensions cannot be compiled.\n\nIn your project root:\n\n    $ npm install websocket\n  \nThen in your code:\n\n```javascript\nvar WebSocketServer = require('websocket').server;\nvar WebSocketClient = require('websocket').client;\nvar WebSocketFrame  = require('websocket').frame;\nvar WebSocketRouter = require('websocket').router;\nvar W3CWebSocket = require('websocket').w3cwebsocket;\n```\n\nNote for Windows Users\n----------------------\nBecause there is a small C++ component used for validating UTF-8 data, you will need to install a few other software packages in addition to Node to be able to build this module:\n\n- [Microsoft Visual C++](http://www.microsoft.com/visualstudio/en-us/products/2010-editions/visual-cpp-express)\n- [Python 2.7](http://www.python.org/download/) (NOT Python 3.x)\n\n\nCurrent Features:\n-----------------\n- Licensed under the Apache License, Version 2.0\n- Protocol version \"8\" and \"13\" (Draft-08 through the final RFC) framing and handshake\n- Can handle/aggregate received fragmented messages\n- Can fragment outgoing messages\n- Router to mount multiple applications to various path and protocol combinations\n- TLS supported for outbound connections via WebSocketClient\n- TLS supported for server connections (use https.createServer instead of http.createServer)\n  - Thanks to [pors](https://github.com/pors) for confirming this!\n- Cookie setting and parsing\n- Tunable settings\n  - Max Receivable Frame Size\n  - Max Aggregate ReceivedMessage Size\n  - Whether to fragment outgoing messages\n  - Fragmentation chunk size for outgoing messages\n  - Whether to automatically send ping frames for the purposes of keepalive\n  - Keep-alive ping interval\n  - Whether or not to automatically assemble received fragments (allows application to handle individual fragments directly)\n  - How long to wait after sending a close frame for acknowledgment before closing the socket.\n- [W3C WebSocket API](http://www.w3.org/TR/websockets/) for applications running on both Node and browsers (via the `W3CWebSocket` class). \n\n\nKnown Issues/Missing Features:\n------------------------------\n- No API for user-provided protocol extensions.\n\n\nUsage Examples\n==============\n\nServer Example\n--------------\n\nHere's a short example showing a server that echos back anything sent to it, whether utf-8 or binary.\n\n```javascript\n#!/usr/bin/env node\nvar WebSocketServer = require('websocket').server;\nvar http = require('http');\n\nvar server = http.createServer(function(request, response) {\n    console.log((new Date()) + ' Received request for ' + request.url);\n    response.writeHead(404);\n    response.end();\n});\nserver.listen(8080, function() {\n    console.log((new Date()) + ' Server is listening on port 8080');\n});\n\nwsServer = new WebSocketServer({\n    httpServer: server,\n    // You should not use autoAcceptConnections for production\n    // applications, as it defeats all standard cross-origin protection\n    // facilities built into the protocol and the browser.  You should\n    // *always* verify the connection's origin and decide whether or not\n    // to accept it.\n    autoAcceptConnections: false\n});\n\nfunction originIsAllowed(origin) {\n  // put logic here to detect whether the specified origin is allowed.\n  return true;\n}\n\nwsServer.on('request', function(request) {\n    if (!originIsAllowed(request.origin)) {\n      // Make sure we only accept requests from an allowed origin\n      request.reject();\n      console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');\n      return;\n    }\n    \n    var connection = request.accept('echo-protocol', request.origin);\n    console.log((new Date()) + ' Connection accepted.');\n    connection.on('message', function(message) {\n        if (message.type === 'utf8') {\n            console.log('Received Message: ' + message.utf8Data);\n            connection.sendUTF(message.utf8Data);\n        }\n        else if (message.type === 'binary') {\n            console.log('Received Binary Message of ' + message.binaryData.length + ' bytes');\n            connection.sendBytes(message.binaryData);\n        }\n    });\n    connection.on('close', function(reasonCode, description) {\n        console.log((new Date()) + ' Peer ' + connection.remoteAddress + ' disconnected.');\n    });\n});\n```\n\nClient Example\n--------------\n\nThis is a simple example client that will print out any utf-8 messages it receives on the console, and periodically sends a random number.\n\n*This code demonstrates a client in Node.js, not in the browser*\n\n```javascript\n#!/usr/bin/env node\nvar WebSocketClient = require('websocket').client;\n\nvar client = new WebSocketClient();\n\nclient.on('connectFailed', function(error) {\n    console.log('Connect Error: ' + error.toString());\n});\n\nclient.on('connect', function(connection) {\n    console.log('WebSocket Client Connected');\n    connection.on('error', function(error) {\n        console.log(\"Connection Error: \" + error.toString());\n    });\n    connection.on('close', function() {\n        console.log('echo-protocol Connection Closed');\n    });\n    connection.on('message', function(message) {\n        if (message.type === 'utf8') {\n            console.log(\"Received: '\" + message.utf8Data + \"'\");\n        }\n    });\n    \n    function sendNumber() {\n        if (connection.connected) {\n            var number = Math.round(Math.random() * 0xFFFFFF);\n            connection.sendUTF(number.toString());\n            setTimeout(sendNumber, 1000);\n        }\n    }\n    sendNumber();\n});\n\nclient.connect('ws://localhost:8080/', 'echo-protocol');\n```\n\nClient Example using the *W3C WebSocket API*\n--------------------------------------------\n\nSame example as above but using the [W3C WebSocket API](http://www.w3.org/TR/websockets/).\n\n```javascript\nvar W3CWebSocket = require('websocket').w3cwebsocket;\n\nvar client = new W3CWebSocket('ws://localhost:8080/', 'echo-protocol');\n\nclient.onerror = function() {\n    console.log('Connection Error');\n};\n\nclient.onopen = function() {\n    console.log('WebSocket Client Connected');\n\n    function sendNumber() {\n        if (client.readyState === client.OPEN) {\n            var number = Math.round(Math.random() * 0xFFFFFF);\n            client.send(number.toString());\n            setTimeout(sendNumber, 1000);\n        }\n    }\n    sendNumber();\n};\n\nclient.onclose = function() {\n    console.log('echo-protocol Client Closed');\n};\n\nclient.onmessage = function(e) {\n    if (typeof e.data === 'string') {\n        console.log(\"Received: '\" + e.data + \"'\");\n    }\n};\n```\n    \nRequest Router Example\n----------------------\n\nFor an example of using the request router, see `libwebsockets-test-server.js` in the `test` folder.\n\n\nResources\n---------\n\nA presentation on the state of the WebSockets protocol that I gave on July 23, 2011 at the LA Hacker News meetup.  [WebSockets: The Real-Time Web, Delivered](http://www.scribd.com/doc/60898569/WebSockets-The-Real-Time-Web-Delivered)\n",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theturtle32/WebSocket-Node.git"
@@ -38374,14 +38268,18 @@ window.storeHash = function() {
 
   let ipfsHash = document.getElementById('input-ipfs').value
   let namehash = ens.hash(name)
+
   console.log("IPFS hash: " + ipfsHash)
   console.log("Name hash:" + namehash)
   console.log("IPFS hash 32 byte: ")
   let contentHash = ipfs.hashTo32ByteHex(ipfsHash)
   console.log("Content hash: " + contentHash)
+  console.log(contentHash.length)
 
   resolver.setContent(namehash, contentHash)
   .then(console.log)
+  // resolver.resolve(namehash)
+  // .then(console.log)
 }
 
 },{"./ens.js":163,"./eth.js":164,"./ipfs.js":166,"./resolver.js":167}],166:[function(require,module,exports){
@@ -38390,7 +38288,7 @@ const multihash = require('multihashes')
 module.exports.hashTo32ByteHex = function(ipfsHash) {
   let buf = multihash.fromB58String(ipfsHash)
   let digest = multihash.decode(buf).digest
-  return multihash.toHexString(digest)
+  return '0x' + multihash.toHexString(digest)
 }
 
 },{"multihashes":56}],167:[function(require,module,exports){
@@ -38400,7 +38298,25 @@ const REGISTRAR_MAIN_NET = "0x314159265dd8dbb310642f98f50c066173c1259b"
 const REGISTRAR_ROPSTEN = "0x112234455c3a32fd11230c42e7bccd4a84e02010"
 
 // var web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/0pzfHdAhsqakqtBk8Hs6"))
-var web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/0pzfHdAhsqakqtBk8Hs6"))
+// var web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/0pzfHdAhsqakqtBk8Hs6"))
+const web3 = new Web3(window.web3.currentProvider)
+
+let networkId = 1
+let registrarAddress = '0x0'
+let account = '0x0'
+
+// Set registrar according to network (ROPSTEN or MAINNET)
+web3.eth.net.getId()
+.then((networkId) => {
+  let el = document.getElementById('ethereum-network')
+  if (networkId === 3) {
+    el.innerHTML = "Ropsten"
+    registrarAddress = REGISTRAR_ROPSTEN
+  } else {
+    el.innerHTML = "Main"
+    registrarAddress = REGISTRAR_MAIN_NET
+  }
+})
 
 var abi = {
   registrar: JSON.parse(require('../contracts/registrar.js')),
@@ -38409,8 +38325,7 @@ var abi = {
 
 module.exports.resolve = function(namehash) {
 
-  // Registrar = new web3.eth.Contract(abi.registrar, REGISTRAR_ROPSTEN)
-  Registrar = new web3.eth.Contract(abi.registrar, REGISTRAR_MAIN_NET)
+  Registrar = new web3.eth.Contract(abi.registrar, registrarAddress)
 
   return new Promise((resolve, reject) => {
     Registrar.methods.resolver(namehash).call()
@@ -38432,16 +38347,27 @@ module.exports.resolve = function(namehash) {
 module.exports.setContent = function(namehash, contentHash) {
 
   // Registrar = new web3.eth.Contract(abi.registrar, REGISTRAR_ROPSTEN)
-  Registrar = new web3.eth.Contract(abi.registrar, REGISTRAR_MAIN_NET)
+  let Registrar = new web3.eth.Contract(abi.registrar, registrarAddress)
+  let account = '0x0'
+
+  // Get current account
 
   return new Promise((resolve, reject) => {
-    Registrar.methods.resolver(namehash).call()
+    return web3.eth.getAccounts()
+    .then((accounts) => {
+      account = accounts[0]
+      console.log("Account: " + account)
+    })
+    .then(() => {
+      return Registrar.methods.resolver(namehash).call()
+    })
     .then((address) => {
       if (address === '0x0000000000000000000000000000000000000000') {
         reject(null)
       } else {
+        console.log("Resolver address: " + address)
         Resolver = new web3.eth.Contract(abi.resolver, address)
-        return Resolver.methods.setContent(namehash, contentHash).send()
+        return Resolver.methods.setContent(namehash, contentHash).send({from: account})
       }
     })
     .then((tx) => {
@@ -38525,7 +38451,7 @@ Entity.prototype.encode = function encode(data, enc, /* internal */ reporter) {
   return this._getEncoder(enc).encode(data, reporter);
 };
 
-},{"../asn1":168,"inherits":268,"vm":323}],170:[function(require,module,exports){
+},{"../asn1":168,"inherits":268,"vm":322}],170:[function(require,module,exports){
 var inherits = require('inherits');
 var Reporter = require('../base').Reporter;
 var Buffer = require('buffer').Buffer;
@@ -39229,7 +39155,7 @@ Node.prototype._encodeValue = function encode(data, reporter, parent) {
 
     if (tag === null) {
       if (state.use === null)
-        reporter.error('Tag could be omitted only for .use()');
+        reporter.error('Tag could be ommited only for .use()');
     } else {
       if (state.use === null)
         result = this._encodeComposite(tag, primitive, cls, content);
@@ -40536,7 +40462,7 @@ AES.prototype.scrub = function () {
 
 module.exports.AES = AES
 
-},{"safe-buffer":311}],187:[function(require,module,exports){
+},{"safe-buffer":310}],187:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -40655,7 +40581,7 @@ StreamCipher.prototype.setAAD = function setAAD (buf) {
 
 module.exports = StreamCipher
 
-},{"./aes":186,"./ghash":191,"./incr32":192,"buffer-xor":213,"cipher-base":215,"inherits":268,"safe-buffer":311}],188:[function(require,module,exports){
+},{"./aes":186,"./ghash":191,"./incr32":192,"buffer-xor":213,"cipher-base":215,"inherits":268,"safe-buffer":310}],188:[function(require,module,exports){
 var ciphers = require('./encrypter')
 var deciphers = require('./decrypter')
 var modes = require('./modes/list.json')
@@ -40793,7 +40719,7 @@ function createDecipher (suite, password) {
 exports.createDecipher = createDecipher
 exports.createDecipheriv = createDecipheriv
 
-},{"./aes":186,"./authCipher":187,"./modes":199,"./streamCipher":202,"cipher-base":215,"evp_bytestokey":251,"inherits":268,"safe-buffer":311}],190:[function(require,module,exports){
+},{"./aes":186,"./authCipher":187,"./modes":199,"./streamCipher":202,"cipher-base":215,"evp_bytestokey":251,"inherits":268,"safe-buffer":310}],190:[function(require,module,exports){
 var MODES = require('./modes')
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
@@ -40909,7 +40835,7 @@ function createCipher (suite, password) {
 exports.createCipheriv = createCipheriv
 exports.createCipher = createCipher
 
-},{"./aes":186,"./authCipher":187,"./modes":199,"./streamCipher":202,"cipher-base":215,"evp_bytestokey":251,"inherits":268,"safe-buffer":311}],191:[function(require,module,exports){
+},{"./aes":186,"./authCipher":187,"./modes":199,"./streamCipher":202,"cipher-base":215,"evp_bytestokey":251,"inherits":268,"safe-buffer":310}],191:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var ZEROES = Buffer.alloc(16, 0)
 
@@ -41000,7 +40926,7 @@ GHASH.prototype.final = function (abl, bl) {
 
 module.exports = GHASH
 
-},{"safe-buffer":311}],192:[function(require,module,exports){
+},{"safe-buffer":310}],192:[function(require,module,exports){
 function incr32 (iv) {
   var len = iv.length
   var item
@@ -41071,7 +40997,7 @@ exports.encrypt = function (self, data, decrypt) {
   return out
 }
 
-},{"buffer-xor":213,"safe-buffer":311}],195:[function(require,module,exports){
+},{"buffer-xor":213,"safe-buffer":310}],195:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -41115,9 +41041,8 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":311}],196:[function(require,module,exports){
-var Buffer = require('safe-buffer').Buffer
-
+},{"safe-buffer":310}],196:[function(require,module,exports){
+(function (Buffer){
 function encryptByte (self, byteParam, decrypt) {
   var pad = self._cipher.encryptBlock(self._prev)
   var out = pad[0] ^ byteParam
@@ -41142,9 +41067,11 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":311}],197:[function(require,module,exports){
+}).call(this,require("buffer").Buffer)
+},{"buffer":214}],197:[function(require,module,exports){
+(function (Buffer){
 var xor = require('buffer-xor')
-var Buffer = require('safe-buffer').Buffer
+
 var incr32 = require('../incr32')
 
 function getBlock (self) {
@@ -41174,7 +41101,8 @@ exports.encrypt = function (self, chunk) {
   return xor(chunk, pad)
 }
 
-},{"../incr32":192,"buffer-xor":213,"safe-buffer":311}],198:[function(require,module,exports){
+}).call(this,require("buffer").Buffer)
+},{"../incr32":192,"buffer":214,"buffer-xor":213}],198:[function(require,module,exports){
 exports.encrypt = function (self, block) {
   return self._cipher.encryptBlock(block)
 }
@@ -41445,7 +41373,7 @@ StreamCipher.prototype._final = function () {
 
 module.exports = StreamCipher
 
-},{"./aes":186,"cipher-base":215,"inherits":268,"safe-buffer":311}],203:[function(require,module,exports){
+},{"./aes":186,"cipher-base":215,"inherits":268,"safe-buffer":310}],203:[function(require,module,exports){
 var ebtk = require('evp_bytestokey')
 var aes = require('browserify-aes/browser')
 var DES = require('browserify-des')
@@ -41899,7 +41827,7 @@ module.exports = {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./algorithms.json":208,"./sign":211,"./verify":212,"buffer":214,"create-hash":218,"inherits":268,"stream":320}],211:[function(require,module,exports){
+},{"./algorithms.json":208,"./sign":211,"./verify":212,"buffer":214,"create-hash":218,"inherits":268,"stream":319}],211:[function(require,module,exports){
 (function (Buffer){
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
 var createHmac = require('create-hmac')
@@ -43966,7 +43894,7 @@ CipherBase.prototype._toString = function (value, enc, fin) {
 
 module.exports = CipherBase
 
-},{"inherits":268,"safe-buffer":311,"stream":320,"string_decoder":321}],216:[function(require,module,exports){
+},{"inherits":268,"safe-buffer":310,"stream":319,"string_decoder":320}],216:[function(require,module,exports){
 (function (Buffer){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -44259,7 +44187,7 @@ module.exports = function createHash (alg) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./md5":220,"buffer":214,"cipher-base":215,"inherits":268,"ripemd160":310,"sha.js":313}],219:[function(require,module,exports){
+},{"./md5":220,"buffer":214,"cipher-base":215,"inherits":268,"ripemd160":309,"sha.js":312}],219:[function(require,module,exports){
 arguments[4][5][0].apply(exports,arguments)
 },{"buffer":214,"dup":5}],220:[function(require,module,exports){
 arguments[4][6][0].apply(exports,arguments)
@@ -44327,7 +44255,7 @@ module.exports = function createHmac (alg, key) {
   return new Hmac(alg, key)
 }
 
-},{"./legacy":222,"cipher-base":215,"create-hash/md5":220,"inherits":268,"ripemd160":310,"safe-buffer":311,"sha.js":313}],222:[function(require,module,exports){
+},{"./legacy":222,"cipher-base":215,"create-hash/md5":220,"inherits":268,"ripemd160":309,"safe-buffer":310,"sha.js":312}],222:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Buffer = require('safe-buffer').Buffer
@@ -44375,7 +44303,7 @@ Hmac.prototype._final = function () {
 }
 module.exports = Hmac
 
-},{"cipher-base":215,"inherits":268,"safe-buffer":311}],223:[function(require,module,exports){
+},{"cipher-base":215,"inherits":268,"safe-buffer":310}],223:[function(require,module,exports){
 'use strict'
 
 exports.randomBytes = exports.rng = exports.pseudoRandomBytes = exports.prng = require('randombytes')
@@ -44443,11 +44371,6 @@ exports.privateDecrypt = publicEncrypt.privateDecrypt
 //   }
 // })
 
-var rf = require('randomfill')
-
-exports.randomFill = rf.randomFill
-exports.randomFillSync = rf.randomFillSync
-
 exports.createCredentials = function () {
   throw new Error([
     'sorry, createCredentials is not implemented yet',
@@ -44474,7 +44397,7 @@ exports.constants = {
   'POINT_CONVERSION_HYBRID': 6
 }
 
-},{"browserify-cipher":203,"browserify-sign":210,"browserify-sign/algos":207,"create-ecdh":217,"create-hash":218,"create-hmac":221,"diffie-hellman":230,"pbkdf2":281,"public-encrypt":288,"randombytes":295,"randomfill":296}],224:[function(require,module,exports){
+},{"browserify-cipher":203,"browserify-sign":210,"browserify-sign/algos":207,"create-ecdh":217,"create-hash":218,"create-hmac":221,"diffie-hellman":230,"pbkdf2":281,"public-encrypt":288,"randombytes":295}],224:[function(require,module,exports){
 'use strict';
 
 exports.utils = require('./des/utils');
@@ -45541,53 +45464,30 @@ arguments[4][20][0].apply(exports,arguments)
 arguments[4][21][0].apply(exports,arguments)
 },{"bn.js":183,"dup":21,"minimalistic-assert":274,"minimalistic-crypto-utils":275}],249:[function(require,module,exports){
 module.exports={
-  "_args": [
-    [
-      {
-        "raw": "elliptic@^6.0.0",
-        "scope": null,
-        "escapedName": "elliptic",
-        "name": "elliptic",
-        "rawSpec": "^6.0.0",
-        "spec": ">=6.0.0 <7.0.0",
-        "type": "range"
-      },
-      "/usr/lib/node_modules/watchify/node_modules/browserify-sign"
-    ]
-  ],
-  "_from": "elliptic@>=6.0.0 <7.0.0",
+  "_from": "elliptic@^6.0.0",
   "_id": "elliptic@6.4.0",
-  "_inCache": true,
-  "_location": "/watchify/elliptic",
-  "_nodeVersion": "7.0.0",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/elliptic-6.4.0.tgz_1487798866428_0.30510620190761983"
-  },
-  "_npmUser": {
-    "name": "indutny",
-    "email": "fedor@indutny.com"
-  },
-  "_npmVersion": "3.10.8",
+  "_inBundle": false,
+  "_integrity": "sha1-ysmvh2LIWDYYcAPI3+GT5eLq5d8=",
+  "_location": "/browserify/elliptic",
   "_phantomChildren": {},
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "elliptic@^6.0.0",
-    "scope": null,
-    "escapedName": "elliptic",
     "name": "elliptic",
+    "escapedName": "elliptic",
     "rawSpec": "^6.0.0",
-    "spec": ">=6.0.0 <7.0.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^6.0.0"
   },
   "_requiredBy": [
-    "/watchify/browserify-sign",
-    "/watchify/create-ecdh"
+    "/browserify/browserify-sign",
+    "/browserify/create-ecdh"
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
   "_shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
-  "_shrinkwrap": null,
   "_spec": "elliptic@^6.0.0",
-  "_where": "/usr/lib/node_modules/watchify/node_modules/browserify-sign",
+  "_where": "/usr/local/lib/node_modules/browserify/node_modules/browserify-sign",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -45595,6 +45495,7 @@ module.exports={
   "bugs": {
     "url": "https://github.com/indutny/elliptic/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "bn.js": "^4.4.0",
     "brorand": "^1.0.1",
@@ -45604,6 +45505,7 @@ module.exports={
     "minimalistic-assert": "^1.0.0",
     "minimalistic-crypto-utils": "^1.0.0"
   },
+  "deprecated": false,
   "description": "EC cryptography",
   "devDependencies": {
     "brfs": "^1.4.3",
@@ -45621,15 +45523,9 @@ module.exports={
     "jshint": "^2.6.0",
     "mocha": "^2.1.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
-    "tarball": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz"
-  },
   "files": [
     "lib"
   ],
-  "gitHead": "6b0d2b76caae91471649c8e21f0b1d3ba0f96090",
   "homepage": "https://github.com/indutny/elliptic",
   "keywords": [
     "EC",
@@ -45639,15 +45535,7 @@ module.exports={
   ],
   "license": "MIT",
   "main": "lib/elliptic.js",
-  "maintainers": [
-    {
-      "name": "indutny",
-      "email": "fedor@indutny.com"
-    }
-  ],
   "name": "elliptic",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/indutny/elliptic.git"
@@ -46014,9 +45902,9 @@ function EVP_BytesToKey (password, salt, keyBits, ivLen) {
 
 module.exports = EVP_BytesToKey
 
-},{"md5.js":271,"safe-buffer":311}],252:[function(require,module,exports){
+},{"md5.js":271,"safe-buffer":310}],252:[function(require,module,exports){
 arguments[4][32][0].apply(exports,arguments)
-},{"buffer":214,"dup":32,"inherits":268,"stream":320}],253:[function(require,module,exports){
+},{"buffer":214,"dup":32,"inherits":268,"stream":319}],253:[function(require,module,exports){
 arguments[4][33][0].apply(exports,arguments)
 },{"./hash/common":254,"./hash/hmac":255,"./hash/ripemd":256,"./hash/sha":257,"./hash/utils":264,"dup":33}],254:[function(require,module,exports){
 arguments[4][34][0].apply(exports,arguments)
@@ -46145,7 +46033,7 @@ arguments[4][48][0].apply(exports,arguments)
 /*!
  * Determine if an object is a Buffer
  *
- * @author   Feross Aboukhadijeh <https://feross.org>
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
  * @license  MIT
  */
 
@@ -46417,7 +46305,7 @@ HashBase.prototype._digest = function () {
 
 module.exports = HashBase
 
-},{"inherits":268,"safe-buffer":311,"stream":320}],273:[function(require,module,exports){
+},{"inherits":268,"safe-buffer":310,"stream":319}],273:[function(require,module,exports){
 var bn = require('bn.js');
 var brorand = require('brorand');
 
@@ -46914,13 +46802,13 @@ function decrypt (data, password) {
 arguments[4][61][0].apply(exports,arguments)
 },{"./lib/async":282,"./lib/sync":285,"dup":61}],282:[function(require,module,exports){
 arguments[4][62][0].apply(exports,arguments)
-},{"./default-encoding":283,"./precondition":284,"./sync":285,"_process":287,"dup":62,"safe-buffer":311}],283:[function(require,module,exports){
+},{"./default-encoding":283,"./precondition":284,"./sync":285,"_process":287,"dup":62,"safe-buffer":310}],283:[function(require,module,exports){
 arguments[4][63][0].apply(exports,arguments)
 },{"_process":287,"dup":63}],284:[function(require,module,exports){
 arguments[4][64][0].apply(exports,arguments)
 },{"dup":64}],285:[function(require,module,exports){
 arguments[4][65][0].apply(exports,arguments)
-},{"./default-encoding":283,"./precondition":284,"create-hash/md5":220,"dup":65,"ripemd160":310,"safe-buffer":311,"sha.js":313}],286:[function(require,module,exports){
+},{"./default-encoding":283,"./precondition":284,"create-hash/md5":220,"dup":65,"ripemd160":309,"safe-buffer":310,"sha.js":312}],286:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -47993,122 +47881,10 @@ function randomBytes (size, cb) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":287,"safe-buffer":311}],296:[function(require,module,exports){
-(function (process,global){
-'use strict'
-
-function oldBrowser () {
-  throw new Error('secure random number generation not supported by this browser\nuse chrome, FireFox or Internet Explorer 11')
-}
-var safeBuffer = require('safe-buffer')
-var randombytes = require('randombytes')
-var Buffer = safeBuffer.Buffer
-var kBufferMaxLength = safeBuffer.kMaxLength
-var crypto = global.crypto || global.msCrypto
-var kMaxUint32 = Math.pow(2, 32) - 1
-function assertOffset (offset, length) {
-  if (typeof offset !== 'number' || offset !== offset) { // eslint-disable-line no-self-compare
-    throw new TypeError('offset must be a number')
-  }
-
-  if (offset > kMaxUint32 || offset < 0) {
-    throw new TypeError('offset must be a uint32')
-  }
-
-  if (offset > kBufferMaxLength || offset > length) {
-    throw new RangeError('offset out of range')
-  }
-}
-
-function assertSize (size, offset, length) {
-  if (typeof size !== 'number' || size !== size) { // eslint-disable-line no-self-compare
-    throw new TypeError('size must be a number')
-  }
-
-  if (size > kMaxUint32 || size < 0) {
-    throw new TypeError('size must be a uint32')
-  }
-
-  if (size + offset > length || size > kBufferMaxLength) {
-    throw new RangeError('buffer too small')
-  }
-}
-if ((crypto && crypto.getRandomValues) || !process.browser) {
-  exports.randomFill = randomFill
-  exports.randomFillSync = randomFillSync
-} else {
-  exports.randomFill = oldBrowser
-  exports.randomFillSync = oldBrowser
-}
-function randomFill (buf, offset, size, cb) {
-  if (!Buffer.isBuffer(buf) && !(buf instanceof global.Uint8Array)) {
-    throw new TypeError('"buf" argument must be a Buffer or Uint8Array')
-  }
-
-  if (typeof offset === 'function') {
-    cb = offset
-    offset = 0
-    size = buf.length
-  } else if (typeof size === 'function') {
-    cb = size
-    size = buf.length - offset
-  } else if (typeof cb !== 'function') {
-    throw new TypeError('"cb" argument must be a function')
-  }
-  assertOffset(offset, buf.length)
-  assertSize(size, offset, buf.length)
-  return actualFill(buf, offset, size, cb)
-}
-
-function actualFill (buf, offset, size, cb) {
-  if (process.browser) {
-    var ourBuf = buf.buffer
-    var uint = new Uint8Array(ourBuf, offset, size)
-    crypto.getRandomValues(uint)
-    if (cb) {
-      process.nextTick(function () {
-        cb(null, buf)
-      })
-      return
-    }
-    return buf
-  }
-  if (cb) {
-    randombytes(size, function (err, bytes) {
-      if (err) {
-        return cb(err)
-      }
-      bytes.copy(buf, offset)
-      cb(null, buf)
-    })
-    return
-  }
-  var bytes = randombytes(size)
-  bytes.copy(buf, offset)
-  return buf
-}
-function randomFillSync (buf, offset, size) {
-  if (typeof offset === 'undefined') {
-    offset = 0
-  }
-  if (!Buffer.isBuffer(buf) && !(buf instanceof global.Uint8Array)) {
-    throw new TypeError('"buf" argument must be a Buffer or Uint8Array')
-  }
-
-  assertOffset(offset, buf.length)
-
-  if (size === undefined) size = buf.length - offset
-
-  assertSize(size, offset, buf.length)
-
-  return actualFill(buf, offset, size)
-}
-
-}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":287,"randombytes":295,"safe-buffer":311}],297:[function(require,module,exports){
+},{"_process":287,"safe-buffer":310}],296:[function(require,module,exports){
 module.exports = require('./lib/_stream_duplex.js');
 
-},{"./lib/_stream_duplex.js":298}],298:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":297}],297:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -48233,7 +48009,7 @@ function forEach(xs, f) {
     f(xs[i], i);
   }
 }
-},{"./_stream_readable":300,"./_stream_writable":302,"core-util-is":216,"inherits":268,"process-nextick-args":286}],299:[function(require,module,exports){
+},{"./_stream_readable":299,"./_stream_writable":301,"core-util-is":216,"inherits":268,"process-nextick-args":286}],298:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -48281,7 +48057,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":301,"core-util-is":216,"inherits":268}],300:[function(require,module,exports){
+},{"./_stream_transform":300,"core-util-is":216,"inherits":268}],299:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -49291,7 +49067,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":298,"./internal/streams/BufferList":303,"./internal/streams/destroy":304,"./internal/streams/stream":305,"_process":287,"core-util-is":216,"events":250,"inherits":268,"isarray":270,"process-nextick-args":286,"safe-buffer":311,"string_decoder/":321,"util":185}],301:[function(require,module,exports){
+},{"./_stream_duplex":297,"./internal/streams/BufferList":302,"./internal/streams/destroy":303,"./internal/streams/stream":304,"_process":287,"core-util-is":216,"events":250,"inherits":268,"isarray":270,"process-nextick-args":286,"safe-buffer":310,"string_decoder/":320,"util":185}],300:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -49506,7 +49282,7 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
-},{"./_stream_duplex":298,"core-util-is":216,"inherits":268}],302:[function(require,module,exports){
+},{"./_stream_duplex":297,"core-util-is":216,"inherits":268}],301:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -50173,7 +49949,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":298,"./internal/streams/destroy":304,"./internal/streams/stream":305,"_process":287,"core-util-is":216,"inherits":268,"process-nextick-args":286,"safe-buffer":311,"util-deprecate":322}],303:[function(require,module,exports){
+},{"./_stream_duplex":297,"./internal/streams/destroy":303,"./internal/streams/stream":304,"_process":287,"core-util-is":216,"inherits":268,"process-nextick-args":286,"safe-buffer":310,"util-deprecate":321}],302:[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
@@ -50248,7 +50024,7 @@ module.exports = function () {
 
   return BufferList;
 }();
-},{"safe-buffer":311}],304:[function(require,module,exports){
+},{"safe-buffer":310}],303:[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
@@ -50321,13 +50097,13 @@ module.exports = {
   destroy: destroy,
   undestroy: undestroy
 };
-},{"process-nextick-args":286}],305:[function(require,module,exports){
+},{"process-nextick-args":286}],304:[function(require,module,exports){
 module.exports = require('events').EventEmitter;
 
-},{"events":250}],306:[function(require,module,exports){
+},{"events":250}],305:[function(require,module,exports){
 module.exports = require('./readable').PassThrough
 
-},{"./readable":307}],307:[function(require,module,exports){
+},{"./readable":306}],306:[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -50336,33 +50112,33 @@ exports.Duplex = require('./lib/_stream_duplex.js');
 exports.Transform = require('./lib/_stream_transform.js');
 exports.PassThrough = require('./lib/_stream_passthrough.js');
 
-},{"./lib/_stream_duplex.js":298,"./lib/_stream_passthrough.js":299,"./lib/_stream_readable.js":300,"./lib/_stream_transform.js":301,"./lib/_stream_writable.js":302}],308:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":297,"./lib/_stream_passthrough.js":298,"./lib/_stream_readable.js":299,"./lib/_stream_transform.js":300,"./lib/_stream_writable.js":301}],307:[function(require,module,exports){
 module.exports = require('./readable').Transform
 
-},{"./readable":307}],309:[function(require,module,exports){
+},{"./readable":306}],308:[function(require,module,exports){
 module.exports = require('./lib/_stream_writable.js');
 
-},{"./lib/_stream_writable.js":302}],310:[function(require,module,exports){
+},{"./lib/_stream_writable.js":301}],309:[function(require,module,exports){
 arguments[4][70][0].apply(exports,arguments)
-},{"buffer":214,"dup":70,"hash-base":252,"inherits":268}],311:[function(require,module,exports){
+},{"buffer":214,"dup":70,"hash-base":252,"inherits":268}],310:[function(require,module,exports){
 arguments[4][71][0].apply(exports,arguments)
-},{"buffer":214,"dup":71}],312:[function(require,module,exports){
+},{"buffer":214,"dup":71}],311:[function(require,module,exports){
 arguments[4][74][0].apply(exports,arguments)
-},{"dup":74,"safe-buffer":311}],313:[function(require,module,exports){
+},{"dup":74,"safe-buffer":310}],312:[function(require,module,exports){
 arguments[4][75][0].apply(exports,arguments)
-},{"./sha":314,"./sha1":315,"./sha224":316,"./sha256":317,"./sha384":318,"./sha512":319,"dup":75}],314:[function(require,module,exports){
+},{"./sha":313,"./sha1":314,"./sha224":315,"./sha256":316,"./sha384":317,"./sha512":318,"dup":75}],313:[function(require,module,exports){
 arguments[4][76][0].apply(exports,arguments)
-},{"./hash":312,"dup":76,"inherits":268,"safe-buffer":311}],315:[function(require,module,exports){
+},{"./hash":311,"dup":76,"inherits":268,"safe-buffer":310}],314:[function(require,module,exports){
 arguments[4][77][0].apply(exports,arguments)
-},{"./hash":312,"dup":77,"inherits":268,"safe-buffer":311}],316:[function(require,module,exports){
+},{"./hash":311,"dup":77,"inherits":268,"safe-buffer":310}],315:[function(require,module,exports){
 arguments[4][78][0].apply(exports,arguments)
-},{"./hash":312,"./sha256":317,"dup":78,"inherits":268,"safe-buffer":311}],317:[function(require,module,exports){
+},{"./hash":311,"./sha256":316,"dup":78,"inherits":268,"safe-buffer":310}],316:[function(require,module,exports){
 arguments[4][79][0].apply(exports,arguments)
-},{"./hash":312,"dup":79,"inherits":268,"safe-buffer":311}],318:[function(require,module,exports){
+},{"./hash":311,"dup":79,"inherits":268,"safe-buffer":310}],317:[function(require,module,exports){
 arguments[4][80][0].apply(exports,arguments)
-},{"./hash":312,"./sha512":319,"dup":80,"inherits":268,"safe-buffer":311}],319:[function(require,module,exports){
+},{"./hash":311,"./sha512":318,"dup":80,"inherits":268,"safe-buffer":310}],318:[function(require,module,exports){
 arguments[4][81][0].apply(exports,arguments)
-},{"./hash":312,"dup":81,"inherits":268,"safe-buffer":311}],320:[function(require,module,exports){
+},{"./hash":311,"dup":81,"inherits":268,"safe-buffer":310}],319:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -50491,7 +50267,7 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":250,"inherits":268,"readable-stream/duplex.js":297,"readable-stream/passthrough.js":306,"readable-stream/readable.js":307,"readable-stream/transform.js":308,"readable-stream/writable.js":309}],321:[function(require,module,exports){
+},{"events":250,"inherits":268,"readable-stream/duplex.js":296,"readable-stream/passthrough.js":305,"readable-stream/readable.js":306,"readable-stream/transform.js":307,"readable-stream/writable.js":308}],320:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -50764,7 +50540,7 @@ function simpleWrite(buf) {
 function simpleEnd(buf) {
   return buf && buf.length ? this.write(buf) : '';
 }
-},{"safe-buffer":311}],322:[function(require,module,exports){
+},{"safe-buffer":310}],321:[function(require,module,exports){
 (function (global){
 
 /**
@@ -50835,7 +50611,7 @@ function config (name) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],323:[function(require,module,exports){
+},{}],322:[function(require,module,exports){
 var indexOf = require('indexof');
 
 var Object_keys = function (obj) {

@@ -16,13 +16,13 @@
 }
 
 #logo-ipfs {
-  animation: ipfs 3s infinite;
+  animation: ipfs 3s ease-in-out infinite;
   -webkit-backface-visibility: hidden;
 }
 
 #logo-ens {
 
-  animation: ens 3s infinite;
+  animation: ens 3s ease-in-out infinite;
   -webkit-backface-visibility: hidden;
 }
 

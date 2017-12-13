@@ -12,12 +12,16 @@ window.storeHash = function() {
 
   let ipfsHash = document.getElementById('input-ipfs').value
   let namehash = ens.hash(name)
+
   console.log("IPFS hash: " + ipfsHash)
   console.log("Name hash:" + namehash)
   console.log("IPFS hash 32 byte: ")
   let contentHash = ipfs.hashTo32ByteHex(ipfsHash)
   console.log("Content hash: " + contentHash)
+  console.log(contentHash.length)
 
   resolver.setContent(namehash, contentHash)
   .then(console.log)
+  // resolver.resolve(namehash)
+  // .then(console.log)
 }
