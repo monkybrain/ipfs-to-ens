@@ -13,7 +13,8 @@ let account = '0x0'
 
 // Set registrar according to network (ROPSTEN or MAINNET)
 web3.eth.net.getId()
-.then((networkId) => {
+.then((id) => {
+  networkId = id
   let el = document.getElementById('ethereum-network')
   if (networkId === 3) {
     el.innerHTML = "Ropsten"
@@ -77,8 +78,11 @@ module.exports.setContent = function(namehash, contentHash) {
       }
     })
     .then((tx) => {
-      console.log("Tx: " + tx)
-      resolve(tx)
+      console.log("Tx Hash: " + tx.transactionHash)
+      resolve({
+        networkId: networkId,
+        hash: tx.transactionHash
+      })
     })
   })
 }

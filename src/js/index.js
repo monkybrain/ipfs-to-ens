@@ -1,6 +1,5 @@
 const ens = require('./ens.js')
 const ipfs = require('./ipfs.js')
-const eth = require('./eth.js')
 const resolver = require('./resolver.js')
 
 window.storeHash = function() {
@@ -21,7 +20,14 @@ window.storeHash = function() {
   console.log(contentHash.length)
 
   resolver.setContent(namehash, contentHash)
-  .then(console.log)
-  // resolver.resolve(namehash)
-  // .then(console.log)
+  .then((tx) => {
+    console.log(tx)
+    let url
+    if (tx.networkId == 1) {
+      url = "https://etherscan.io/tx/" + tx.hash
+    } else {
+      url = "https://ropsten.etherscan.io/tx" + tx.hash
+    }
+    window.open(url, "_blank")
+  })
 }
