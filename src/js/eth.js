@@ -1,7 +1,7 @@
 const Web3 = require('web3')
 
 if (!window.web3) {
-  alert("Could not find injected web3 object. You need MetaMask (or equivalent) to run this dApp")
+  alert("Could not find injected web3 provider.\n\nYou need MetaMask (or equivalent) to run this dApp.")
   return
 }
 
@@ -16,9 +16,9 @@ var updateNetworkId = function() {
   .then((networkId) => {
     module.exports.networkId = networkId
     if (networkId === 3) {
-      document.getElementById('ethereum-network').innerHTML = "Ropsten"
+      document.getElementById('network').innerHTML = "Ropsten"
     } else {
-      document.getElementById('ethereum-network').innerHTML = "Main"
+      document.getElementById('network').innerHTML = "Main"
     }
   })
 }

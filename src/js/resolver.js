@@ -44,18 +44,19 @@ module.exports.setContent = function(namehash, contentHash) {
   // Get current account
 
   return new Promise((resolve, reject) => {
-    return Registrar.methods.resolver(namehash).call()
+    Registrar.methods.resolver(namehash).call()
     .then((address) => {
       if (address === '0x0000000000000000000000000000000000000000') {
-        reject(null)
+        let name = document.getElementById('input-ens').value
+        return reject('Could not find resolver for ' + name)
       } else {
         console.log("Resolver address: " + address)
         Resolver = new web3.eth.Contract(abi.resolver, address)
+        alert('MetaMask will now ask you to sign the transaction.\n\nA link to the transaction on etherscan will appear as soon as it has been broadcast to the network.\n\nPlease be patient as this can take a little while.')
         return Resolver.methods.setContent(namehash, contentHash).send({from: eth.account})
       }
     })
     .then((tx) => {
-      console.log("Tx Hash: " + tx.transactionHash)
       resolve(tx.transactionHash)
     })
   })

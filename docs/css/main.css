@@ -17,11 +17,12 @@ body {
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 150px 150px 150px 150px;
-  grid-template-rows: auto;
+  grid-template-rows: 50px 130px 100px;
   grid-template-areas:
     "title title title title"
     "logo input input input"
     "action action action action";
+  height: 300px;
 }
 
 #container-logo {
@@ -61,8 +62,9 @@ body {
   text-align: center;
 }
 
-
-
+#container-etherscan {
+  text-align: center;
+}
 
 #input-ens {
 
@@ -72,7 +74,7 @@ body {
   margin-left: 0px;
 }
 
-#network {
+#container-network {
   margin-top: 15px;
 }
 

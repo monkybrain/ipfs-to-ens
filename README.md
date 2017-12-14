@@ -6,4 +6,8 @@ Converts entered IPFS multihash to 32 byte hex string, finds the resolver for yo
 
 Requires MetaMask or equivalent dApp plugin/browser (only tested with MetaMask).
 
- 
+### Todo
+
+- Better UX for transaction receipts
+- Publish on IPFS and link to ipfs-to-ens.eth (dogfooding :smiley:)
+- Better documentation

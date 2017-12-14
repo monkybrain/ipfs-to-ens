@@ -38252,7 +38252,7 @@ module.exports.hash = function(domain) {
 const Web3 = require('web3')
 
 if (!window.web3) {
-  alert("Could not find injected web3 object. You need MetaMask (or equivalent) to run this dApp")
+  alert("Could not find injected web3 provider.\n\nYou need MetaMask (or equivalent) to run this dApp.")
   return
 }
 
@@ -38267,9 +38267,9 @@ var updateNetworkId = function() {
   .then((networkId) => {
     module.exports.networkId = networkId
     if (networkId === 3) {
-      document.getElementById('ethereum-network').innerHTML = "Ropsten"
+      document.getElementById('network').innerHTML = "Ropsten"
     } else {
-      document.getElementById('ethereum-network').innerHTML = "Main"
+      document.getElementById('network').innerHTML = "Main"
     }
   })
 }
@@ -38300,32 +38300,51 @@ const resolver = require('./resolver.js')
 
 window.storeHash = function() {
 
-  // Get address and hash
+  // Get and validate domain
   let name = document.getElementById('input-ens').value
+
   console.log("Domain: " + name)
-  console.log("Valid domain: " + ens.isValid(name))
 
-  let ipfsHash = document.getElementById('input-ipfs').value
+  // If domain invalid -> abort
+  if (!ens.isValid(name)) {
+    alert('Invalid domain name')
+    return
+  }
+
+  // Else get namehash for name
   let namehash = ens.hash(name)
+  console.log("Name hash: " + namehash)
 
-  console.log("IPFS hash: " + ipfsHash)
-  console.log("Name hash:" + namehash)
-  console.log("IPFS hash 32 byte: ")
+  // Get and validate IPFS hash
+  let ipfsHash = document.getElementById('input-ipfs').value
+
+  if (!ipfs.isValidHash(ipfsHash)) {
+    alert('Invalid IPFS hash')
+    return
+  }
+
+  // Convert IPFS multihash to 32 byte hex string
   let contentHash = ipfs.hashTo32ByteHexString(ipfsHash)
+  console.log("IPFS hash: " + ipfsHash)
   console.log("Content hash: " + contentHash)
-  console.log(contentHash.length)
 
+  // Clear transaction link
+  document.getElementById('etherscan').innerHTML = ""
+  document.getElementById('etherscan').href = ""
+
+  // Set content
   resolver.setContent(namehash, contentHash)
   .then((txHash) => {
-    console.log(txHash)
+    console.log("TX Hash: " + txHash)
     let url
     if (eth.networkId == 1) {
       url = "https://etherscan.io/tx/" + txHash
     } else {
-      url = "https://ropsten.etherscan.io/tx" + txHash
+      url = "https://ropsten.etherscan.io/tx/" + txHash
     }
-    console.log(url)
-    window.open(url, "_blank")
+    let el = document.getElementById('etherscan')
+    el.href = url
+    el.innerHTML = "View latest transaction on Etherscan"
   })
   .catch((err) => {
     console.error(err)
@@ -38340,6 +38359,21 @@ module.exports.hashTo32ByteHexString = function(ipfsHash) {
   let buf = multihash.fromB58String(ipfsHash)
   let digest = multihash.decode(buf).digest
   return '0x' + multihash.toHexString(digest)
+}
+
+module.exports.isValidHash = function(ipfsHash) {
+
+  // If decoding of hash succeeds -> return true
+  try {
+    multihash.decode(multihash.fromB58String(ipfsHash))
+    return true
+  }
+
+  // Else return false
+  catch(err) {
+    return false
+  }
+
 }
 
 },{"multihashes":56}],167:[function(require,module,exports){
@@ -38389,18 +38423,19 @@ module.exports.setContent = function(namehash, contentHash) {
   // Get current account
 
   return new Promise((resolve, reject) => {
-    return Registrar.methods.resolver(namehash).call()
+    Registrar.methods.resolver(namehash).call()
     .then((address) => {
       if (address === '0x0000000000000000000000000000000000000000') {
-        reject(null)
+        let name = document.getElementById('input-ens').value
+        return reject('Could not find resolver for ' + name)
       } else {
         console.log("Resolver address: " + address)
         Resolver = new web3.eth.Contract(abi.resolver, address)
+        alert('MetaMask will now ask you to sign the transaction.\n\nA link to the transaction on etherscan will appear as soon as it has been broadcast to the network.\n\nPlease be patient as this can take a little while.')
         return Resolver.methods.setContent(namehash, contentHash).send({from: eth.account})
       }
     })
     .then((tx) => {
-      console.log("Tx Hash: " + tx.transactionHash)
       resolve(tx.transactionHash)
     })
   })
