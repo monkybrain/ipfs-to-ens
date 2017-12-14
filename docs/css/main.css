@@ -1,6 +1,13 @@
 body {
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
+  background-image: url('../img/sayagata-400px.png');
+  background-repeat: repeat;
+  background-size: 200px;
   font-family: 'Rokkitt';
+}
+
+.container {
+  border: none;
 }
 
 #content {
@@ -8,31 +15,76 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title title title"
+    "logo input input input"
+    "action action action action";
+}
+
+#container-logo {
+  position: relative;
+  grid-area: logo;
+  margin-right: 20px;
+}
+
+#container-title {
+  position: relative;
+  grid-area: title;
+  text-align: center;
+  font-family: 'Rokkitt';
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+#container-input {
+  position: relative;
+  grid-area: input;
+  text-align: left;
+}
+
+#container-action {
+  padding-top: 20px;
+  position: relative;
+  grid-area: action;
   text-align: center;
 }
 
-#input-container {
-  position: relative;
-  top: 50px;
+#container-footer {
+  position: absolute;
+  bottom: 0px;
   left: 50%;
+  width: 600px;
   transform: translate(-50%, 0);
+  text-align: center;
 }
 
-#input-address {
-  width: 100px;
+
+
+
+#input-ens {
+
 }
 
-#input-hash {
-  width: 350px;
+#input-tld {
+  margin-left: 0px;
 }
 
 #network {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 input {
   font-family: 'Courier New', monospace;
   font-size: 14px;
+  padding: 3px;
+  outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 3px;
 }
 
 .button {
@@ -47,3 +99,34 @@ input {
   font-weight: bold;
   cursor: pointer;
 }
+
+#div-icons {
+  margin-top: 20px;
+}
+
+.icon {
+  width: 32px;
+  margin: 0px 5px 0px 5px;
+}
+
+a {
+  color: #e60000;
+}
+
+/* @keyframes greenToBlue {
+  0% {
+    background-color: #479293;
+  }
+
+  10% {
+    background-color: #2ecf5b;
+  }
+
+  50% {
+    background-color: #2ecf5b;
+  }
+
+  60% {
+    background-color: #479293;
+  }
+} */

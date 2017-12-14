@@ -5,24 +5,19 @@
 
 .logo-div {
   position: absolute;
-  top: 0px;
+  top: 76px;
   left: 50%;
-  transform: translate(-50%, 0);
-}
-
-#logo-container {
-  position: relative;
-  height: 120px;
+  transform: translate(-50%, -50%);
 }
 
 #logo-ipfs {
-  animation: ipfs 3s ease-in-out infinite;
+  animation: ipfs 10s ease-in-out infinite;
   -webkit-backface-visibility: hidden;
 }
 
 #logo-ens {
 
-  animation: ens 3s ease-in-out infinite;
+  animation: ens 10s ease-in-out infinite;
   -webkit-backface-visibility: hidden;
 }
 
@@ -33,12 +28,17 @@
     opacity: 1;
   }
 
+  10% {
+    transform: rotate3d(0, 1, 0, 180deg);
+    opacity: 0.5;
+  }
+
   50% {
     transform: rotate3d(0, 1, 0, 180deg);
     opacity: 0.5;
   }
 
-  100% {
+  60% {
     transform: rotate3d(0, 1, 0, 0deg);
     opacity: 1;
   }
@@ -52,12 +52,17 @@
     opacity: 0.5;
   }
 
+  10% {
+    transform: rotate3d(0, 1, 0, 0deg);
+    opacity: 1;
+  }
+
   50% {
     transform: rotate3d(0, 1, 0, 0deg);
     opacity: 1;
   }
 
-  100% {
+  60% {
     transform: rotate3d(0, 1, 0, 180deg);
     opacity: 0.5;
   }

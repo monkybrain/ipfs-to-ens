@@ -16,8 +16,14 @@
   <!-- CONTENT -->
   <div id="content">
 
-    <!-- INPUT: NAME -->
-    <div id="logo-container">
+    <!-- CONTAINER: TITLE -->
+    <div class="container" id="container-title">
+      <!-- Set an IPFS content hash for your ENS domain! -->
+      Store an IPFS content hash with your ENS domain!
+    </div>
+
+    <!-- CONTAINER: SPINNING ENS/IPFS LOGOS -->
+    <div class="container" id="container-logo">
       <div class="logo-div">
         <p><img class="logo" id="logo-ens" src="img/ens_512x512.png" /></p>
       </div>
@@ -27,34 +33,55 @@
       </div>
     </div>
 
-    <div id="input-container">
+    <!-- CONTAINER: INPUTS -->
+    <div class="container" id="container-input">
+
+      <!-- INPUT: ENS DOMAIN -->
       <p>
-        ENS domain address<br />
+        ENS domain:<br />
+        <input id="input-ens" type="text" placeholder="ipfs-to-ens.eth" size="48">
       </p>
-      <p><input id="input-ens" type="text" placeholder="ipfs-to-ens.eth" size="30" value="monkybrain.eth"></p>
 
       <!-- INPUT: IPFS HASH -->
       <p>
-        IPFS content hash<br />
-      </p>
-      <p>
-        <input id="input-ipfs" type="text" placeholder="QmdsCTbnG9FR7BDb9D3eonR1BjZBEW6p6URW1ZqVV5yVsa" size="48" maxlength="46" value="QmdsCTbnG9FR7BDb9D3eonR1BjZBEW6p6URW1ZqVV5yVsa">
+        IPFS hash:<br />
+        <input id="input-ipfs" type="text" placeholder="QmdsCTbnG9FR7BDb9D3eonR1BjZBEW6p6URW1ZqVV5yVsa" size="48" maxlength="46">
       </p>
 
+    </div>
+
+    <!-- CONTAINER: ACTION BUTTON -->
+    <div class="container" id="container-action">
+
+      <!-- BUTTON: STORE HASH -->
       <div class="button" onclick="storeHash()">
         STORE HASH
       </div>
 
+      <!-- INFO: NETWORK -->
       <div id="network">
-        Network: <span id="ethereum-network"></span>
-      </div>
-
+        <p>Network: <span id="ethereum-network">???</span></p>
       </div>
 
     </div>
 
+</div>
+
+<!-- CONTAINER: FOOTER -->
+<div class="container" id="container-footer">
+
+  <!-- ICONS: GITHUB/TWITTER -->
+  <div id="div-icons">
+    <a href="https://github.com/monkybrain/ipfs-to-ens" target="_blank"><img class="icon" src="img/github.svg"></a>
+    <a href="https://twitter.com/monkybrain_" target="_blank"><img class="icon" src="img/twitter_512x512.png"></a>
+  </div>
+
+  <!-- LINK: CHROME WEB STORE -->
+  <p>Check out my <a href="https://chrome.google.com/webstore/detail/ens-content-resolver/ifgfopmoihnnicfgcpafgibiinfkodjf" target="_blank">ENS Content Resolver</a>, a Chrome extension that resolves ENS domains to IPFS hashes and redirects your
+  browser to the content.</p>
 
 </div>
+
 </body>
 <script src="js/index.js"></script>
 </html>
