@@ -12,36 +12,11 @@ var abi = {
   resolver: JSON.parse(require('../contracts/resolver.js'))
 }
 
-module.exports.resolve = function(namehash) {
-
-  let registrarAddress = eth.networkId === 1 ? REGISTRAR_MAIN_NET : REGISTRAR_ROPSTEN
-  Registrar = new web3.eth.Contract(abi.registrar, registrarAddress)
-
-  return new Promise((resolve, reject) => {
-    Registrar.methods.resolver(namehash).call()
-    .then((address) => {
-      if (address === '0x0000000000000000000000000000000000000000') {
-        reject('Could not find resolver for that domain')
-      } else {
-        Resolver = new web3.eth.Contract(abi.resolver, address)
-        return Resolver.methods.addr(namehash).call()
-      }
-    })
-    .then((address) => {
-      console.log("Address: " + address)
-      resolve(address)
-    })
-  })
-}
-
 module.exports.setContent = function(namehash, contentHash) {
 
   let registrarAddress = eth.networkId === 1 ? REGISTRAR_MAIN_NET : REGISTRAR_ROPSTEN
 
   let Registrar = new web3.eth.Contract(abi.registrar, registrarAddress)
-  let account = '0x0'
-
-  // Get current account
 
   return new Promise((resolve, reject) => {
     Registrar.methods.resolver(namehash).call()
